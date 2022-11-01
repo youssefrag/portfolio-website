@@ -24,7 +24,20 @@ export const Navbar = () => {
 
       <div className="app__navbar-menu">
         {toggle ? (
-          <HiOutlineX onClick={() => setToggle(false)} />
+          <>
+            <HiOutlineX onClick={() => setToggle(false)} />
+            <div>
+              <ul>
+                {["home", "about", "projects", "contact"].map((item) => (
+                  <li key={`link-${item}`}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
         ) : (
           <HiOutlineViewList onClick={() => setToggle(true)} />
         )}
