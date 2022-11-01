@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --font-base: "Montserrat", sans-serif;
-
   --red-color: #f03e3e;
 }
 
@@ -11,4 +9,8 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
 }
