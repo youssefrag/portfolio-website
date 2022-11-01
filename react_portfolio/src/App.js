@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "./App.scss";
 
@@ -10,6 +10,20 @@ function App() {
   const [page, setPage] = useState("home");
 
   const [navClass, setNavClass] = useState("fixed");
+
+  const about = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const goToAbout = () => {
+    setPage("about");
+    scrollToSection(about);
+  };
 
   useEffect(() => {
     const sectionHome = document.querySelector("#home");
@@ -39,9 +53,9 @@ function App() {
 
   return (
     <div className="App">
-      <Hero />
+      <Hero page={page} setPage={setPage} goToAbout={goToAbout} />
       <Navbar page={page} setPage={setPage} navClass={navClass} />
-      <About />
+      <About about={about} />
     </div>
   );
 }

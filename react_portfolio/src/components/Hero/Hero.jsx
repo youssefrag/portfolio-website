@@ -4,7 +4,9 @@ import "./Hero.scss";
 
 import bgVideo from "../../assets/video.mp4";
 
-const Hero = () => {
+const Hero = (props) => {
+  const { page, setPage, goToAbout } = props;
+
   return (
     <div id="home" className="hero">
       <video src={bgVideo} autoPlay loop muted />
@@ -13,7 +15,7 @@ const Hero = () => {
           Hello, I'm <span>Youssef Ragab</span>
           <br />I am a Full Stack Developer
         </h1>
-        <button>View my work &#x2193;</button>
+        <button onClick={() => goToAbout()}>View my work &#x2193;</button>
       </div>
     </div>
   );
