@@ -6,7 +6,7 @@ import { HiOutlineViewList, HiOutlineX } from "react-icons/hi";
 
 import { images } from "../../constants";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -45,3 +45,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;

@@ -1,11 +1,13 @@
 import "./App.scss";
 
-import { Navbar } from "./components/Navbar/Navbar";
+import { Navbar, Home, About } from "./components";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
