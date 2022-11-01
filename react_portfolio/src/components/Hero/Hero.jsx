@@ -6,7 +6,7 @@ import bgVideo from "../../assets/video.mp4";
 
 const Hero = () => {
   return (
-    <div id="hero" className="hero">
+    <div id="home" className="hero">
       <video src={bgVideo} autoPlay loop muted />
       <div className="intro">
         <h1>
