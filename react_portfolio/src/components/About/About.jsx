@@ -19,13 +19,12 @@ const About = () => {
             </div>
             <div className="p-container">
               <p>
-                About Fully committed to the philosophy of life-long learning,
-                I’m a full stack developer with a deep passion for JavaScript,
-                React and all things web development. The unique combination of
-                creativity, logic, technology and never running out of new
-                things to discover, drives my excitement and passion for web
-                development. When I’m not at my computer I like to spend my time
-                reading, keeping fit and playing guitar.
+                Recent coding bootcamp grad. I’m a full stack developer with a
+                deep passion for all things web development. The unique
+                combination of creativity, logic, technology and never running
+                out of new things to discover, drives my excitement and passion
+                for web development. When I’m not at my computer I like to spend
+                my time reading and practicing martial arts.
               </p>
             </div>
           </div>

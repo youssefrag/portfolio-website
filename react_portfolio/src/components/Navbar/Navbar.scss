@@ -11,6 +11,22 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.section-nav-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background: var(--grey-color);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .app__navbar-links {
   display: flex;
   flex-direction: row;
