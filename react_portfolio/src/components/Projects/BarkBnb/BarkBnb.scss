@@ -1,7 +1,7 @@
 .barkbnb-container {
   display: flex;
 
-  gap: 6rem;
+  gap: 5rem;
 
   justify-content: flex-start;
 
@@ -11,8 +11,11 @@
   padding: 2rem;
   //   margin-bottom: 5rem;
   img {
-    width: 500px;
+    width: 450px;
 
+    @media screen and (max-width: 1200px) {
+      width: 300px;
+    }
     @media screen and (max-width: 900px) {
       display: none;
     }

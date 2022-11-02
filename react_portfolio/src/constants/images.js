@@ -11,7 +11,7 @@ import react from "../assets/react.png";
 import sass from "../assets/sass.png";
 import sql from "../assets/sql.png";
 
-import barkbnb from "../assets/barkbnb.jpeg";
+import barkbnb from "../assets/barkbnb.png";
 import boxshop from "../assets/boxshop.jpeg";
 
 export default {
