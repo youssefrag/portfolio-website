@@ -32,7 +32,6 @@ function App() {
     const obsHome = new IntersectionObserver(
       function (entries) {
         const ent = entries[0];
-        console.log(ent);
 
         if (ent.isIntersecting === false) {
           setNavClass("sticky");
@@ -56,12 +55,7 @@ function App() {
     const obsAbout = new IntersectionObserver(
       function (entries) {
         const ent = entries[0];
-        console.log(ent);
-
-        if (ent.isIntersecting === false) {
-          setPage("projects");
-        }
-        if (ent.isIntersecting === true) {
+        if (ent.isIntersecting === true && ent.isVisible === false) {
           setPage("about");
         }
       },
@@ -78,20 +72,40 @@ function App() {
     const obsProjects = new IntersectionObserver(
       function (entries) {
         const ent = entries[0];
-        console.log(ent);
 
-        if (ent.isIntersecting === false) {
-          setPage("about");
+        if (ent.isIntersecting === true && ent.isVisible === false) {
+          setPage("projects");
         }
       },
       {
         // In the viewport
         root: null,
         threshold: 0,
-        rootMargin: "-5px",
+        rootMargin: "30px",
       }
     );
     obsProjects.observe(sectionProjects);
+
+    const sectionContact = document.querySelector("#contact");
+    const obsContact = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+
+        if (ent.isIntersecting === true && ent.isVisible === false) {
+          setPage("contact");
+        }
+        if (ent.isIntersecting === false && ent.isVisible === false) {
+          setPage("projects");
+        }
+      },
+      {
+        // In the viewport
+        root: null,
+        threshold: 0,
+        rootMargin: "30px",
+      }
+    );
+    obsContact.observe(sectionContact);
   }, []);
 
   return (

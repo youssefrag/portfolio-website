@@ -9,7 +9,8 @@ import { AiFillGithub, AiFillPhone } from "react-icons/ai";
 const Contact = () => {
   return (
     <div id="contact" className="section-contact container">
-      <h3>Have a question or want to work together? Contact Me</h3>
+      <h3>Have a question or want to work together?</h3>
+      <span>Contact Me</span>
       <div className="contact-container">
         <div className="icon-container">
           <BsEnvelopeFill />
