@@ -12,6 +12,7 @@ import sass from "../assets/sass.png";
 import sql from "../assets/sql.png";
 
 import barkbnb from "../assets/barkbnb.jpeg";
+import boxshop from "../assets/boxshop.jpeg";
 
 export default {
   css,
@@ -27,4 +28,5 @@ export default {
   sass,
   sql,
   barkbnb,
+  boxshop,
 };

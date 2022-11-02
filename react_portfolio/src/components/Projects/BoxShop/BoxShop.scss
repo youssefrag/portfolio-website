@@ -1,7 +1,7 @@
-.barkbnb-container {
+.boxshop-container {
   display: flex;
 
-  gap: 8rem;
+  gap: 15rem;
 
   justify-content: flex-start;
 
@@ -11,10 +11,8 @@
   padding: 2rem;
   //   margin-bottom: 5rem;
   img {
-    width: 500px;
+    width: 300px;
   }
-
-  margin-bottom: 5rem;
 }
 
 .info-container {
