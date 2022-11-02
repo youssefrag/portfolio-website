@@ -1,7 +1,7 @@
 .boxshop-container {
   display: flex;
 
-  gap: 15rem;
+  gap: 10rem;
 
   justify-content: flex-start;
 
@@ -9,9 +9,14 @@
   border-radius: 15px;
 
   padding: 2rem;
+  padding-right: 5rem;
   // padding-bottom: 5rem;
   img {
     width: 300px;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
 }
 

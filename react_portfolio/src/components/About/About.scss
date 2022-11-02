@@ -20,6 +20,10 @@ h2 {
 .descrip-skills {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .descrip {
@@ -33,7 +37,9 @@ h2 {
 
   width: 40%;
 
-  //   padding-bottom: 3rem;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
 
   .p-container {
     border: 2px solid #f03e3e;
