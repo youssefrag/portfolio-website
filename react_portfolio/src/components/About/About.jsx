@@ -19,12 +19,12 @@ const About = (props) => {
             </div>
             <div className="p-container">
               <p>
-                Recent coding bootcamp grad. I’m a full stack developer with a
-                deep passion for all things web development. The unique
-                combination of creativity, logic, technology and never running
-                out of new things to discover, drives my excitement and passion
-                for web development. When I’m not at my computer I like to spend
-                my time reading and practicing martial arts.
+                Recent coding bootcamp grad, full stack developer with a deep
+                passion for all things web development. The unique combination
+                of creativity, logic, technology and never running out of new
+                things to discover, drives my excitement and passion for web
+                development. When I’m not at my computer I like to spend my time
+                reading and doing sports.
               </p>
             </div>
           </div>
