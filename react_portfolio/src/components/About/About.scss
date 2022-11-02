@@ -1,7 +1,7 @@
 .section-about {
   width: 100%;
 
-  background-image: url("../../assets/about-bg.jpg");
+  background: #212529;
 
   object-fit: cover;
 
@@ -27,6 +27,7 @@ h2 {
   justify-content: center;
 
   margin-left: 3rem;
+  margin-top: 2rem;
 
   width: 40%;
 
@@ -59,4 +60,6 @@ h2 {
 
 .skills {
   margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
 }

@@ -4,13 +4,12 @@ import "./About.scss";
 
 import youssef from "../../assets/Youssef-004.jpg";
 
-// import youssef from '../../assets/'
+import Skills from "../Skills/Skills";
 
 const About = (props) => {
   const { about } = props;
   return (
     <div id="about" ref={about} className="section-about">
-      {/* <video src={bgVideo} autoPlay loop muted /> */}
       <div className="about-info container">
         <h2 className="sub-heading">About Me!</h2>
         <div className="descrip-skills">
@@ -31,9 +30,9 @@ const About = (props) => {
           </div>
           <div className="skills">
             <h2 className="sub-heading">Skills</h2>
+            <Skills />
           </div>
         </div>
-        <div className="filler"></div>
       </div>
     </div>
   );
