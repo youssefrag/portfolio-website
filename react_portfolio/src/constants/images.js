@@ -11,6 +11,8 @@ import react from "../assets/react.png";
 import sass from "../assets/sass.png";
 import sql from "../assets/sql.png";
 
+import barkbnb from "../assets/barkbnb.jpeg";
+
 export default {
   css,
   django,
@@ -24,4 +26,5 @@ export default {
   react,
   sass,
   sql,
+  barkbnb,
 };

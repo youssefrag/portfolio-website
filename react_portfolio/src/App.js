@@ -5,6 +5,7 @@ import "./App.scss";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -56,6 +57,7 @@ function App() {
       <Hero page={page} setPage={setPage} goToAbout={goToAbout} />
       <Navbar page={page} setPage={setPage} navClass={navClass} />
       <About about={about} />
+      <Projects />
     </div>
   );
 }
