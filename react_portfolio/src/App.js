@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -99,6 +100,7 @@ function App() {
       <Navbar page={page} setPage={setPage} navClass={navClass} />
       <About about={about} />
       <Projects />
+      <Contact />
     </div>
   );
 }
