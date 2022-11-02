@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     const sectionHome = document.querySelector("#home");
-    const obs = new IntersectionObserver(
+    const obsHome = new IntersectionObserver(
       function (entries) {
         const ent = entries[0];
         console.log(ent);
@@ -46,10 +46,51 @@ function App() {
         // In the viewport
         root: null,
         threshold: 0,
+        rootMargin: "10px",
+      }
+    );
+    obsHome.observe(sectionHome);
+
+    const sectionAbout = document.querySelector("#about");
+    const obsAbout = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+        console.log(ent);
+
+        if (ent.isIntersecting === false) {
+          setPage("projects");
+        }
+        if (ent.isIntersecting === true) {
+          setPage("about");
+        }
+      },
+      {
+        // In the viewport
+        root: null,
+        threshold: 0,
+        rootMargin: "-25px",
+      }
+    );
+    obsAbout.observe(sectionAbout);
+
+    const sectionProjects = document.querySelector("#projects");
+    const obsProjects = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+        console.log(ent);
+
+        if (ent.isIntersecting === false) {
+          setPage("about");
+        }
+      },
+      {
+        // In the viewport
+        root: null,
+        threshold: 0,
         rootMargin: "-5px",
       }
     );
-    obs.observe(sectionHome);
+    obsProjects.observe(sectionProjects);
   }, []);
 
   return (
