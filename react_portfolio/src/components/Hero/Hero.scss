@@ -23,10 +23,24 @@
   font-size: 2rem;
   font-weight: 400;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 1.5rem;
+  }
+
   h1 {
     color: #fff;
     line-height: 1.8;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2.4rem;
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 2rem;
+    }
 
     span {
       color: var(--red-color);

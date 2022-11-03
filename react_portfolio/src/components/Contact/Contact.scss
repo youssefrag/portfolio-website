@@ -15,6 +15,10 @@ h3 {
   @media screen and (max-width: 1200px) {
     font-size: 1.8rem;
   }
+
+  @media screen and (max-width: 900px) {
+    font-size: 1.4rem;
+  }
 }
 
 span {
@@ -29,6 +33,10 @@ span {
   align-items: center;
   justify-content: space-between;
   width: 40rem;
+
+  @media screen and (max-width: 900px) {
+    padding: 0 4rem;
+  }
 
   h4 {
     color: var(--red-color);

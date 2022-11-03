@@ -25,6 +25,10 @@
   padding: 1rem 2rem;
 
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  @media screen and (max-width: 900px) {
+    flex: 1;
+  }
 }
 
 .app__navbar-links {
@@ -33,6 +37,12 @@
   gap: 3rem;
 
   list-style: none;
+
+  @media screen and (max-width: 900px) {
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+  }
 
   a {
     text-decoration: none;
@@ -43,5 +53,9 @@
     color: #fff;
 
     font-size: 1.3rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
   }
 }

@@ -55,6 +55,7 @@ function App() {
     const obsAbout = new IntersectionObserver(
       function (entries) {
         const ent = entries[0];
+
         if (ent.isIntersecting === true && ent.isVisible === false) {
           setPage("about");
         }
@@ -75,6 +76,9 @@ function App() {
 
         if (ent.isIntersecting === true && ent.isVisible === false) {
           setPage("projects");
+        }
+        if (ent.isIntersecting === false && ent.isVisible === false) {
+          setPage("about");
         }
       },
       {
