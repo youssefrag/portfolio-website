@@ -9,6 +9,19 @@
 
   padding-top: 5rem;
   padding-bottom: 5rem;
+
+  @media screen and (max-width: 900px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  @media screen and (max-width: 650px) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+  @media screen and (max-width: 500px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 h2 {
@@ -39,6 +52,16 @@ h2 {
 
   @media screen and (max-width: 1200px) {
     width: 90%;
+    margin-left: 2rem;
+  }
+  @media screen and (max-width: 900px) {
+    margin-left: 1.6rem;
+  }
+  @media screen and (max-width: 650px) {
+    margin-left: 1.2rem;
+  }
+  @media screen and (max-width: 500px) {
+    margin-left: 0.8rem;
   }
 
   .p-container {
@@ -47,11 +70,24 @@ h2 {
     border-radius: 15px;
 
     margin-bottom: 5rem;
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 2rem;
+      padding: 1.2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 1rem;
+    }
   }
   p {
     color: #fff;
     font-size: 1.3rem;
     line-height: 2;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 }
 

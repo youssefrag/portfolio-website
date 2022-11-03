@@ -9,7 +9,9 @@
   border-radius: 15px;
 
   padding: 2rem;
-  //   margin-bottom: 5rem;
+  @media screen and (max-width: 650px) {
+    padding: 1.2rem;
+  }
   img {
     width: 450px;
 
@@ -46,6 +48,10 @@
   p {
     color: #fff;
     font-size: 1.2rem;
+
+    @media screen and (max-width: 650px) {
+      font-size: 1rem !important;
+    }
   }
 
   button {
